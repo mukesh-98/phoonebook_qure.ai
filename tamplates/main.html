@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+        <!-- Optional theme -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style media="screen">
+          .nav{
+            display:flex;
+
+
+          }
+          .nav .title{
+            font-family: Abel;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 39px;
+            line-height: 50px;
+            /* identical to box height */
+            color: #3F3D56;
+            text-shadow: 0 0 1px #0097FF, 0 0 1px #0097FF;
+            margin-top:20px;
+            margin-left:10px;
+            text-decoration:none;
+
+            flex:1;
+          }
+
+           .goback{
+            flex:-1;
+            margin-top:-65px;
+            margin-left:90%;
+          }
+
+           .goback form button{
+            font-family: Abel;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 30px;
+            line-height: 38px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            color: #3F77AA;
+            border: 2px solid blue;
+            text-decoration:none;
+            cursor: pointer;
+          }
+          .login{
+            position:relative;
+            box-shadow: 3px 3px 17px rgba(44, 40, 40, 0.11);
+            background: #FFFFFF;
+            margin-top: 90px;
+            margin-left: 350px;
+            padding:20px 20px;
+            border-radius:12px;
+
+          }
+
+          .login .heading{
+            padding:20px  0px 10px 0px;
+            text-align:center;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 33px;
+            text-shadow: 0 0 1px #0097FF, 0 0 1px #0097FF;
+            color:  #3F3D56;
+            margin-left:-70px;
+          }
+
+            .login .subt{
+              margin-top: -80px;
+              font-family: Segoe UI;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 20px;
+              /* identical to box height */
+
+
+              color: #172B4D;
+              padding:30px;
+              text-align:center;
+
+
+          }
+          .login1{
+            position:relative;
+            box-shadow: 3px 3px 17px rgba(44, 40, 40, 0.11);
+            background: #FFFFFF;
+            margin:30px 170px;
+            padding:20px 10px;
+            border-radius:12px;
+
+          }
+
+          .login1 .heading1{
+            padding:20px  0px 10px 0px;
+            text-align:center;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 33px;
+            text-shadow: 0 0 1px #0097FF, 0 0 1px #0097FF;
+            color:  #3F3D56;
+            margin-left: -60px;
+          }
+
+            .login1 .sub1{
+              margin-top: 80px;
+              font-family: Segoe UI;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 15px;
+              line-height: 20px;
+              /* identical to box height */
+
+
+              color: #172B4D;
+              padding:30px;
+              text-align:center;
+
+
+          }
+          .login1 .sub1{
+            margin-top: 10px;
+            font-family: Segoe UI;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 20px;
+            /* identical to box height */
+
+
+            color: #172B4D;
+            padding:30px;
+            text-align:center;
+
+
+        }
+
+          .login .subt a{
+              text-decoration:none;
+              color:blue;
+          }
+
+          .login .subt a:hover{
+            text-shadow: 3px 3px 17px rgba(44, 40, 40, 0.11);
+              color:  #3F3D56;
+          }
+
+            .login .subt #logout{
+              padding:70px 0px;
+              margin-left:10px;
+              height: 300px;
+            }
+
+          .login1 form{
+            display: flex;
+            flex-direction: column;
+            margin-left:150px;
+          }
+          .login1 form input{
+            width:70%;
+            margin:2px 40px;
+            padding:10px 5px;
+            border-radius: 10px;
+            border:1px solid grey;
+          }
+
+          .login1 form .submit{
+            width:20%;
+            margin:10px 30%;
+            margin-bottom: 40px;
+          }
+          .table{
+            margin:40px 170px;
+
+
+          }
+          .table .dataframe{
+            padding:50px;
+            border:none;
+          }
+
+            .table .dataframe  thead > tr >th{
+
+              padding:10px 190px;
+
+            }
+
+            @media screen and (max-width: 400px){
+              .login1{
+                position:relative;
+                box-shadow: 3px 3px 17px rgba(44, 40, 40, 0.11);
+                background: #FFFFFF;
+                margin:30px 50px;
+                margin-right: 20px;
+
+                padding:20px 10px;
+                border-radius:12px;
+
+              }
+              .login1 form input{
+                width:100%;
+                margin:2px -60px;
+                padding:10px 5px;
+                border-radius: 10px;
+                border:1px solid grey;
+              }
+
+              .login1 form .submit{
+                width:20%;
+                margin:10px -40px;
+                padding-right: 60px;
+                margin-bottom: 40px;
+              }
+
+              .table{
+                margin:40px 10px;
+
+
+              }
+              .goback{
+               flex:-1;
+               margin-top:-50px;
+               margin-left:65%;
+             }
+              .table .dataframe{
+                padding:50px;
+                border:none;
+              }
+
+                .table .dataframe  thead > tr >th{
+
+                  padding:10px 10px;
+
+                }
+
+              .login{
+                position:relative;
+                box-shadow: 3px 3px 17px rgba(44, 40, 40, 0.11);
+                background: #FFFFFF;
+                margin-top: 90px;
+                margin-left: 60px;
+                padding:20px 20px;
+                border-radius:12px;
+
+              }
+
+            }
+        </style>
+      </head>
+    <body>
+        {% load static %}
+        <div class="nav">
+          <div class="title">
+            PhonBook
+          </div>
+        </div>
+
+        {% if user.is_authenticated %}
+          <div class="goback">
+            <form  action="{% url 'logout' %}" method="post">
+              {% csrf_token %}
+                <button type="submit" name="button">Logout</button>
+            </form>
+          </div>
+
+          <div class="login1">
+            <div class="heading1">
+              PhoneBook
+            </div>
+            <div class="sub1">
+                Welcome, For the phone number you have to enter the name of person</a>
+            </div>
+            <form action="{% url 'main' %}" method="post">
+              {% csrf_token %}
+                <input type="text" placeholder="Enter the name " name="name">
+              <input type="submit" class="submit" name="submit" >
+            </form>
+          </div>
+          <div class="table">
+            {% include 'table.html'%}
+          </div>
+
+        {% else %}
+          <div class="login col-md-6">
+            <div class="heading">
+              PhoneBook
+            </div>
+            <div class="subt">
+              <div id="logout"></div>
+                You are logged out, to proceed ahead go to <a href="{% url 'login' %}">Login</a>
+              </div>
+            </div>
+        {% endif %}
+
+
+
+
+
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.8/lottie.min.js" integrity="sha256-HlqBFI4b3mzFNE97JQcgI/uhJvHBI5czBqfVtEeA1Hg=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      var animation = bodymovin.loadAnimation({
+      container: document.getElementById('logout'), // Required
+      path: '{% static "data.json" %}', // Required
+      renderer: 'svg/canvas/html', // Required
+      loop: true, // Optional
+      autoplay: true, // Optional
+
+      })
+    </script>
+  </body>
+
+</html>
+
+</head>
+<body>
