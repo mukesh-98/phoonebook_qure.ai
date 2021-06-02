@@ -18,6 +18,8 @@ distro==1.4.0
 distro-info===0.23ubuntu1
 dj-database-url==0.5.0
 Django==3.2.3
+django-crispy-forms==1.11.2
+django-heroku==0.3.1
 django-on-heroku==1.1.2
 duplicity==0.8.12.0
 entrypoints==0.3
@@ -38,13 +40,16 @@ Mako==1.1.0
 MarkupSafe==1.1.0
 monotonic==1.5
 netifaces==0.10.4
+numpy==1.20.3
 oauthlib==3.1.0
 olefile==0.46
+pandas==1.2.4
 paramiko==2.6.0
 pexpect==4.6.0
 Pillow==7.0.0
 progressbar==2.5
 protobuf==3.6.1
+psycopg2==2.8.6
 psycopg2-binary==2.8.6
 pycairo==1.16.2
 pycups==1.9.73
